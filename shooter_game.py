@@ -1,6 +1,6 @@
 from pygame import *
 from random import randint
-from time import time as timer
+from time import time as timer          
 
 win_width = 700
 win_height = 500
@@ -12,7 +12,7 @@ mixer.music.load('c44488ffb8db67a.mp3')
 mixer.music.play()   
 fire_sound = mixer.Sound('fire.ogg')
 font.init()
-font1 = font.SysFont('Arial', 80)
+font1 = font.Font('Arial', 80)
 win = font1.render('YOU WIN!', True, (255, 255, 255))
 lose = font1.render('YOU LOSE!', True, (180, 0, 0))
 font2 = font.SysFont('Arial', 36)
